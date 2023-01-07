@@ -67,6 +67,7 @@ class Config(Ui_Form):
             
             # 切换到主程序窗口
             self.main.info = info
+            self.main.load_ding()
             self.config_win.close()
             self.main.mainwindow.main_win.show()
             self.main.mainwindow.name_info.setText(info["username"])
