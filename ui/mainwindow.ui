@@ -7,19 +7,19 @@
     <x>0</x>
     <y>0</y>
     <width>935</width>
-    <height>555</height>
+    <height>605</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
     <width>935</width>
-    <height>555</height>
+    <height>605</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
     <width>935</width>
-    <height>555</height>
+    <height>605</height>
    </size>
   </property>
   <property name="font">
@@ -278,7 +278,7 @@
     <property name="geometry">
      <rect>
       <x>330</x>
-      <y>135</y>
+      <y>185</y>
       <width>105</width>
       <height>30</height>
      </rect>
@@ -302,7 +302,7 @@
     <property name="geometry">
      <rect>
       <x>445</x>
-      <y>135</y>
+      <y>185</y>
       <width>450</width>
       <height>150</height>
      </rect>
@@ -321,7 +321,7 @@
     <property name="geometry">
      <rect>
       <x>330</x>
-      <y>305</y>
+      <y>355</y>
       <width>105</width>
       <height>30</height>
      </rect>
@@ -345,7 +345,7 @@
     <property name="geometry">
      <rect>
       <x>330</x>
-      <y>355</y>
+      <y>405</y>
       <width>80</width>
       <height>30</height>
      </rect>
@@ -369,7 +369,7 @@
     <property name="geometry">
      <rect>
       <x>330</x>
-      <y>405</y>
+      <y>455</y>
       <width>80</width>
       <height>30</height>
      </rect>
@@ -465,7 +465,7 @@
     <property name="geometry">
      <rect>
       <x>445</x>
-      <y>305</y>
+      <y>355</y>
       <width>150</width>
       <height>30</height>
      </rect>
@@ -529,7 +529,7 @@
     <property name="geometry">
      <rect>
       <x>445</x>
-      <y>360</y>
+      <y>410</y>
       <width>400</width>
       <height>20</height>
      </rect>
@@ -551,7 +551,7 @@
     <property name="geometry">
      <rect>
       <x>860</x>
-      <y>360</y>
+      <y>410</y>
       <width>40</width>
       <height>20</height>
      </rect>
@@ -576,7 +576,7 @@
     <property name="geometry">
      <rect>
       <x>445</x>
-      <y>410</y>
+      <y>460</y>
       <width>400</width>
       <height>20</height>
      </rect>
@@ -598,7 +598,7 @@
     <property name="geometry">
      <rect>
       <x>860</x>
-      <y>410</y>
+      <y>460</y>
       <width>40</width>
       <height>20</height>
      </rect>
@@ -623,7 +623,7 @@
     <property name="geometry">
      <rect>
       <x>595</x>
-      <y>470</y>
+      <y>520</y>
       <width>100</width>
       <height>40</height>
      </rect>
@@ -649,6 +649,30 @@
     </property>
     <property name="value">
      <number>0</number>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="flag4">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>135</y>
+      <width>175</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Hack</family>
+      <pointsize>18</pointsize>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>音频包含多人</string>
     </property>
    </widget>
   </widget>
