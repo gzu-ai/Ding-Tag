@@ -28,6 +28,8 @@ class MainWindow(Ui_MainWindow):
         # 绑定事件
         self.play.clicked.connect(self.play_button)
         self.player.playbackStateChanged.connect(self.player_state_change)
+        self.player.durationChanged.connect(self.setting_overall_process)
+        self.player.positionChanged.connect(self.setting_process)
         self.replay.clicked.connect(self.replay_button)
     
     def setting_player(self):
@@ -63,6 +65,14 @@ class MainWindow(Ui_MainWindow):
         # 重新进入播放状态
         self.palyer_stoptoplay()
         self.player.play()
+    
+    def setting_overall_process(self, duration):
+        """ 设置进度条的总进度 """
+        self.t_bar.setMaximum(duration)
+    
+    def setting_process(self, position):
+        """ 设置当前的播放进度 """
+        self.t_bar.setValue(position)
     
     def palyer_stoptoplay(self):
         """ 播放器 停止 --> 播放 """
