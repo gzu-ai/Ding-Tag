@@ -71,3 +71,4 @@ class Config(Ui_Form):
             self.config_win.close()
             self.main.mainwindow.main_win.show()
             self.main.mainwindow.name_info.setText(info["username"])
+            self.main.mainwindow.setting_player()

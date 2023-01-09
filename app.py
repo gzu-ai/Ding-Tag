@@ -26,6 +26,7 @@ class Main:
             self.load_ding()
             self.mainwindow.name_info.setText(self.info["username"])
             self.mainwindow.main_win.show()
+            self.mainwindow.setting_player()
         else:
             self.config.config_win.show()
     
