@@ -43,19 +43,28 @@ class MainWindow(Ui_MainWindow):
     
     def play_button(self):
         """ 播放按键控制播放状态 """
-        if self.player_flag == "pause":  # 暂停 --> 播放
-            self.player_flag = "play"
-            temp_icon = QIcon()
-            temp_icon.addFile(u"./static/icons/pause.png", QSize(), QIcon.Normal, QIcon.Off)
-            self.play.setIcon(temp_icon)
+        if self.player_flag == "pause":  # 停止 --> 播放
+            self.palyer_stoptoplay()
             self.player.play()
-        else:  # 播放 --> 暂停
-            self.player_flag = "pause"
-            temp_icon = QIcon()
-            temp_icon.addFile(u"./static/icons/play.png", QSize(), QIcon.Normal, QIcon.Off)
-            self.play.setIcon(temp_icon)
+        else:  # 播放 --> 停止
+            self.player_playtostop()
             self.player.pause()
     
     def player_state_change(self, state):
         """ 播放器状态发生改变对应的事件 """
-        print(f"state change: {state}")
+        if state == QMediaPlayer.PlaybackState.StoppedState:
+            self.player_playtostop()
+    
+    def palyer_stoptoplay(self):
+        """ 播放器 停止 --> 播放 """
+        self.player_flag = "play"
+        temp_icon = QIcon()
+        temp_icon.addFile(u"./static/icons/pause.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.play.setIcon(temp_icon)
+    
+    def player_playtostop(self):
+        """ 播放器 播放 --> 停止 """
+        self.player_flag = "pause"
+        temp_icon = QIcon()
+        temp_icon.addFile(u"./static/icons/play.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.play.setIcon(temp_icon)
