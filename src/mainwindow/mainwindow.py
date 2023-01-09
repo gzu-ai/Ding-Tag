@@ -34,7 +34,7 @@ class MainWindow(Ui_MainWindow):
     
     def setting_player(self):
         """ 设置播放器 """
-        if self.main.ding["id"] + 1 == self.main.ding["end"]:  # 标注完成
+        if self.main.ding["id"] == self.main.ding["end"]:  # 标注完成
             QMessageBox.information(self.main_win, "提示", "该数据已标注完成，请退出程序")
         else:
             self.path_info.setText(
