@@ -28,6 +28,7 @@ class MainWindow(Ui_MainWindow):
         # 绑定事件
         self.play.clicked.connect(self.play_button)
         self.player.playbackStateChanged.connect(self.player_state_change)
+        self.replay.clicked.connect(self.replay_button)
     
     def setting_player(self):
         """ 设置播放器 """
@@ -54,6 +55,14 @@ class MainWindow(Ui_MainWindow):
         """ 播放器状态发生改变对应的事件 """
         if state == QMediaPlayer.PlaybackState.StoppedState:
             self.player_playtostop()
+    
+    def replay_button(self):
+        """ 重播按键对应的事件 """
+        self.player.stop()  # 先将播放器统一到停止状态
+        self.player.setPosition(0)  # 将播放进度归零
+        # 重新进入播放状态
+        self.palyer_stoptoplay()
+        self.player.play()
     
     def palyer_stoptoplay(self):
         """ 播放器 停止 --> 播放 """
