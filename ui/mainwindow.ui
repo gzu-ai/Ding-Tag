@@ -35,6 +35,9 @@
    <iconset>
     <normaloff>../static/icons/favicon.png</normaloff>../static/icons/favicon.png</iconset>
   </property>
+  <property name="toolTip">
+   <string/>
+  </property>
   <property name="styleSheet">
    <string notr="true"/>
   </property>
@@ -148,56 +151,6 @@
     </property>
     <property name="pixmap">
      <pixmap>../static/icons/record.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="replay">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>460</y>
-      <width>60</width>
-      <height>60</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>../static/icons/replay.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="play">
-    <property name="geometry">
-     <rect>
-      <x>200</x>
-      <y>460</y>
-      <width>60</width>
-      <height>60</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>../static/icons/play.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -673,6 +626,58 @@
     </property>
     <property name="text">
      <string>音频包含多人</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="replay">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>460</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>重播</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../static/icons/replay.png</normaloff>../static/icons/replay.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>60</width>
+      <height>60</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="play">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>460</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>播放/暂停</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../static/icons/play.png</normaloff>../static/icons/play.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>60</width>
+      <height>60</height>
+     </size>
     </property>
    </widget>
   </widget>
