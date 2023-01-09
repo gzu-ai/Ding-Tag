@@ -31,6 +31,8 @@ class MainWindow(Ui_MainWindow):
         self.player.durationChanged.connect(self.setting_overall_process)
         self.player.positionChanged.connect(self.setting_process)
         self.replay.clicked.connect(self.replay_button)
+        self.pleasure_info.valueChanged.connect(self.pleasure_change)
+        self.action_info.valueChanged.connect(self.action_change)
     
     def setting_player(self):
         """ 设置播放器 """
@@ -87,3 +89,11 @@ class MainWindow(Ui_MainWindow):
         temp_icon = QIcon()
         temp_icon.addFile(u"./static/icons/play.png", QSize(), QIcon.Normal, QIcon.Off)
         self.play.setIcon(temp_icon)
+    
+    def pleasure_change(self, value):
+        """ 愉悦维滑动的值 """
+        self.pleasure_show.setText("{:.1f}".format(value / 10))
+    
+    def action_change(self, value):
+        """ 激活维滑动的值 """
+        self.action_show.setText("{:.1f}".format(value / 10))

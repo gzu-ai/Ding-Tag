@@ -505,7 +505,7 @@
      <rect>
       <x>860</x>
       <y>410</y>
-      <width>40</width>
+      <width>50</width>
       <height>20</height>
      </rect>
     </property>
@@ -523,6 +523,9 @@
     </property>
     <property name="text">
      <string>0.0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
    <widget class="QSlider" name="action_info">
@@ -552,7 +555,7 @@
      <rect>
       <x>860</x>
       <y>460</y>
-      <width>40</width>
+      <width>50</width>
       <height>20</height>
      </rect>
     </property>
@@ -570,6 +573,9 @@
     </property>
     <property name="text">
      <string>0.0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
    <widget class="QPushButton" name="submit">
