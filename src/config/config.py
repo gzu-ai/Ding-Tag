@@ -1,4 +1,4 @@
-import json
+import os, json
 from PySide6.QtWidgets import QWidget, QFileDialog, QMessageBox
 
 from .config_ui import Ui_Form
@@ -64,6 +64,16 @@ class Config(Ui_Form):
             # 存储配置文件
             with open("./info.json", "w") as f:
                 f.write(json.dumps(info, indent=4))
+            
+            # 创建标注文件
+            with open(os.path.join(info["savepath"], "result.csv"), "w") as f:
+                f.write(
+                    "{},{},{},{},{},{},{},{},{},{},{}\n".format(
+                        "音频文件", "标注人", "音频嘈杂模糊", "音频音量异常",
+                        "音频时长过短", "音频包含多人", "角色", "文本内容", "情感标签",
+                        "愉悦维", "激活维"
+                    )
+                )
             
             # 切换到主程序窗口
             self.main.info = info
