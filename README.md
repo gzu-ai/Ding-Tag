@@ -17,6 +17,8 @@ pip install -r requirement.txt
 python app.py
 ```
 
+也可以到[发布页面](https://gitee.com/byack/ding-tag/releases)下载打包好的程序，直接解压运行`app.exe`文件即可
+
 ## 项目演示
 
 演示部分我的标注文件只有5个样本，需将所有的标注样本放到同一个文件夹中
