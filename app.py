@@ -43,6 +43,11 @@ class Main:
             self.ding["end"] = len(self.ding["filelist"])
             with open("./ding.json", "w") as f:
                 f.write(json.dumps(self.ding, indent=4))
+    
+    def exit_save_ding(self):
+        """ 退出主窗口时保存标注的配置文件 """
+        with open("./ding.json", 'w') as f:
+            f.write(json.dumps(self.ding, indent=4))
 
 
 if __name__ == "__main__":

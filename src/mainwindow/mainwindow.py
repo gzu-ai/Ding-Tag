@@ -7,13 +7,30 @@ from PySide6.QtGui import QIcon
 from .mainwindow_ui import Ui_MainWindow
 
 
+class MyQMainWindow(QMainWindow):
+    """ 尝试重写主窗口关闭事件 """
+    def __init__(self, mainwindow) -> None:
+        super().__init__()
+        # 将应用主窗口类传递进来，关闭窗口时方便进行ding.json文件保存
+        self.mainwindow = mainwindow
+    
+    def closeEvent(self, event):
+        """ 重写关闭事件 """
+        reply = QMessageBox.question(self, "退出程序", "确定退出吗？")
+        if reply == QMessageBox.Yes:
+            self.mainwindow.main.exit_save_ding()
+            event.accept()
+        else:
+            event.ignore()
+
+
 class MainWindow(Ui_MainWindow):
     """ 应用主窗口 """
     def __init__(self, main) -> None:
         super().__init__()
 
         self.main = main
-        self.main_win = QMainWindow()
+        self.main_win = MyQMainWindow(self)
         self.setupUi(self.main_win)
 
         # 媒体播放器
@@ -38,7 +55,7 @@ class MainWindow(Ui_MainWindow):
     def setting_player(self):
         """ 设置播放器 """
         if self.main.ding["id"] == self.main.ding["end"]:  # 标注完成
-            QMessageBox.information(self.main_win, "提示", "该数据已标注完成，将自动退出程序")
+            QMessageBox.information(self.main_win, "提示", "该数据已标注完成，请退出程序")
             self.main_win.close()
         else:
             self.path_info.setText(
