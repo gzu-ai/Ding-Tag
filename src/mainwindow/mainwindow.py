@@ -111,11 +111,11 @@ class MainWindow(Ui_MainWindow):
     
     def pleasure_change(self, value):
         """ 愉悦维滑动的值 """
-        self.pleasure_show.setText("{:.1f}".format(value / 10))
+        self.pleasure_show.setText(f"{value}")
     
     def action_change(self, value):
         """ 激活维滑动的值 """
-        self.action_show.setText("{:.1f}".format(value / 10))
+        self.action_show.setText(f"{value}")
     
     def info_table(self):
         """ 获取所有标注信息 """
@@ -154,8 +154,8 @@ class MainWindow(Ui_MainWindow):
         self.flag4.setChecked(False)
         self.text_info.clear()
         self.emotion_info.setCurrentIndex(-1)
-        self.pleasure_info.setValue(0)
-        self.action_info.setValue(0)
+        self.pleasure_info.setValue(3)
+        self.action_info.setValue(3)
     
     def submit_event(self):
         """ 提交标注信息 """
