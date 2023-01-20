@@ -488,10 +488,19 @@
      </rect>
     </property>
     <property name="minimum">
-     <number>-10</number>
+     <number>1</number>
     </property>
     <property name="maximum">
-     <number>10</number>
+     <number>5</number>
+    </property>
+    <property name="pageStep">
+     <number>1</number>
+    </property>
+    <property name="value">
+     <number>3</number>
+    </property>
+    <property name="sliderPosition">
+     <number>3</number>
     </property>
     <property name="orientation">
      <enum>Qt::Horizontal</enum>
@@ -522,7 +531,7 @@
      <enum>QFrame::Plain</enum>
     </property>
     <property name="text">
-     <string>0.0</string>
+     <string>3</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -538,10 +547,16 @@
      </rect>
     </property>
     <property name="minimum">
-     <number>-10</number>
+     <number>1</number>
     </property>
     <property name="maximum">
-     <number>10</number>
+     <number>5</number>
+    </property>
+    <property name="pageStep">
+     <number>1</number>
+    </property>
+    <property name="value">
+     <number>3</number>
     </property>
     <property name="orientation">
      <enum>Qt::Horizontal</enum>
@@ -572,7 +587,7 @@
      <enum>QFrame::Plain</enum>
     </property>
     <property name="text">
-     <string>0.0</string>
+     <string>3</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
