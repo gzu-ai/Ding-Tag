@@ -6,19 +6,19 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1150</width>
+    <width>1165</width>
     <height>833</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>1150</width>
+    <width>1165</width>
     <height>833</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>1150</width>
+    <width>1165</width>
     <height>833</height>
    </size>
   </property>
@@ -254,8 +254,8 @@
    <widget class="QLabel" name="emotion">
     <property name="geometry">
      <rect>
-      <x>15</x>
-      <y>680</y>
+      <x>10</x>
+      <y>650</y>
       <width>105</width>
       <height>30</height>
      </rect>
@@ -402,7 +402,7 @@
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>730</y>
+      <y>690</y>
       <width>230</width>
       <height>30</height>
      </rect>
@@ -702,7 +702,7 @@
     <property name="geometry">
      <rect>
       <x>15</x>
-      <y>580</y>
+      <y>570</y>
       <width>60</width>
       <height>30</height>
      </rect>
@@ -722,7 +722,7 @@
      <rect>
       <x>310</x>
       <y>75</y>
-      <width>840</width>
+      <width>855</width>
       <height>3</height>
      </rect>
     </property>
@@ -773,30 +773,6 @@
      <string>音频全为杂音</string>
     </property>
    </widget>
-   <widget class="QCheckBox" name="flag6">
-    <property name="geometry">
-     <rect>
-      <x>690</x>
-      <y>170</y>
-      <width>105</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Microsoft YaHei UI</family>
-      <pointsize>16</pointsize>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="layoutDirection">
-     <enum>Qt::RightToLeft</enum>
-    </property>
-    <property name="text">
-     <string>声音偏小</string>
-    </property>
-   </widget>
    <widget class="QCheckBox" name="flag7">
     <property name="geometry">
      <rect>
@@ -818,13 +794,37 @@
      <enum>Qt::RightToLeft</enum>
     </property>
     <property name="text">
-     <string>时长偏短</string>
+     <string>声音偏小</string>
     </property>
    </widget>
    <widget class="QCheckBox" name="flag8">
     <property name="geometry">
      <rect>
       <x>930</x>
+      <y>170</y>
+      <width>105</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+      <pointsize>16</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>时长偏短</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="flag9">
+    <property name="geometry">
+     <rect>
+      <x>1050</x>
       <y>170</y>
       <width>105</width>
       <height>30</height>
@@ -850,7 +850,7 @@
      <rect>
       <x>310</x>
       <y>210</y>
-      <width>840</width>
+      <width>855</width>
       <height>3</height>
      </rect>
     </property>
@@ -1327,7 +1327,7 @@
      <rect>
       <x>310</x>
       <y>558</y>
-      <width>840</width>
+      <width>855</width>
       <height>5</height>
      </rect>
     </property>
@@ -1343,7 +1343,7 @@
      <rect>
       <x>310</x>
       <y>312</y>
-      <width>840</width>
+      <width>855</width>
       <height>5</height>
      </rect>
     </property>
@@ -1358,7 +1358,7 @@
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>630</y>
+      <y>610</y>
       <width>230</width>
       <height>30</height>
      </rect>
@@ -1393,6 +1393,78 @@
        <normaloff>../static/icons/user.png</normaloff>../static/icons/user.png</iconset>
      </property>
     </item>
+   </widget>
+   <widget class="QCheckBox" name="flag10">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>730</y>
+      <width>170</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+      <pointsize>16</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>客服开头礼貌语</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="flag11">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>770</y>
+      <width>170</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+      <pointsize>16</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>客服结束礼貌语</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="flag6">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>170</y>
+      <width>105</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+      <pointsize>16</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>首尾杂音</string>
+    </property>
    </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
