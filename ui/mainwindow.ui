@@ -6,20 +6,20 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>935</width>
-    <height>605</height>
+    <width>1150</width>
+    <height>833</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>935</width>
-    <height>605</height>
+    <width>1150</width>
+    <height>833</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>935</width>
-    <height>605</height>
+    <width>1150</width>
+    <height>833</height>
    </size>
   </property>
   <property name="font">
@@ -84,9 +84,9 @@
     </property>
     <property name="font">
      <font>
-      <family>Hack</family>
-      <pointsize>16</pointsize>
-      <italic>true</italic>
+      <family>Microsoft YaHei UI</family>
+      <pointsize>18</pointsize>
+      <italic>false</italic>
       <bold>false</bold>
      </font>
     </property>
@@ -105,7 +105,7 @@
     </property>
     <property name="font">
      <font>
-      <family>Hack</family>
+      <family>Microsoft JhengHei UI</family>
       <pointsize>16</pointsize>
      </font>
     </property>
@@ -159,25 +159,6 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="line">
-    <property name="geometry">
-     <rect>
-      <x>290</x>
-      <y>10</y>
-      <width>30</width>
-      <height>520</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::VLine</enum>
-    </property>
-    <property name="lineWidth">
-     <number>5</number>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
    <widget class="QLabel" name="name">
     <property name="geometry">
      <rect>
@@ -189,10 +170,10 @@
     </property>
     <property name="font">
      <font>
-      <family>Hack</family>
+      <family>Microsoft YaHei UI</family>
       <pointsize>18</pointsize>
-      <italic>true</italic>
-      <bold>true</bold>
+      <italic>false</italic>
+      <bold>false</bold>
      </font>
     </property>
     <property name="text">
@@ -213,7 +194,7 @@
     </property>
     <property name="font">
      <font>
-      <family>Hack</family>
+      <family>Microsoft JhengHei UI</family>
       <pointsize>16</pointsize>
      </font>
     </property>
@@ -230,18 +211,18 @@
    <widget class="QLabel" name="text">
     <property name="geometry">
      <rect>
-      <x>330</x>
-      <y>185</y>
-      <width>105</width>
+      <x>325</x>
+      <y>220</y>
+      <width>100</width>
       <height>30</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Hack</family>
+      <family>Microsoft YaHei UI</family>
       <pointsize>18</pointsize>
-      <italic>true</italic>
-      <bold>true</bold>
+      <italic>false</italic>
+      <bold>false</bold>
      </font>
     </property>
     <property name="text">
@@ -254,15 +235,15 @@
    <widget class="QTextEdit" name="text_info">
     <property name="geometry">
      <rect>
-      <x>445</x>
-      <y>185</y>
-      <width>450</width>
-      <height>150</height>
+      <x>440</x>
+      <y>220</y>
+      <width>650</width>
+      <height>90</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Hack</family>
+      <family>Microsoft YaHei UI</family>
       <pointsize>16</pointsize>
      </font>
     </property>
@@ -273,18 +254,18 @@
    <widget class="QLabel" name="emotion">
     <property name="geometry">
      <rect>
-      <x>330</x>
-      <y>355</y>
+      <x>15</x>
+      <y>680</y>
       <width>105</width>
       <height>30</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Hack</family>
+      <family>Microsoft YaHei UI</family>
       <pointsize>18</pointsize>
-      <italic>true</italic>
-      <bold>true</bold>
+      <italic>false</italic>
+      <bold>false</bold>
      </font>
     </property>
     <property name="text">
@@ -297,18 +278,18 @@
    <widget class="QLabel" name="pleasure">
     <property name="geometry">
      <rect>
-      <x>330</x>
-      <y>405</y>
+      <x>325</x>
+      <y>425</y>
       <width>80</width>
       <height>30</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Hack</family>
+      <family>Microsoft YaHei UI</family>
       <pointsize>18</pointsize>
-      <italic>true</italic>
-      <bold>true</bold>
+      <italic>false</italic>
+      <bold>false</bold>
      </font>
     </property>
     <property name="text">
@@ -321,18 +302,18 @@
    <widget class="QLabel" name="action">
     <property name="geometry">
      <rect>
-      <x>330</x>
-      <y>455</y>
+      <x>325</x>
+      <y>675</y>
       <width>80</width>
       <height>30</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Hack</family>
+      <family>Microsoft YaHei UI</family>
       <pointsize>18</pointsize>
-      <italic>true</italic>
-      <bold>true</bold>
+      <italic>false</italic>
+      <bold>false</bold>
      </font>
     </property>
     <property name="text">
@@ -345,145 +326,133 @@
    <widget class="QCheckBox" name="flag1">
     <property name="geometry">
      <rect>
-      <x>330</x>
-      <y>85</y>
-      <width>175</width>
+      <x>325</x>
+      <y>125</y>
+      <width>190</width>
       <height>30</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Hack</family>
-      <pointsize>18</pointsize>
-      <italic>true</italic>
-      <bold>true</bold>
+      <family>Microsoft YaHei UI</family>
+      <pointsize>16</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
      </font>
     </property>
     <property name="layoutDirection">
      <enum>Qt::RightToLeft</enum>
     </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
     <property name="text">
-     <string>音频嘈杂模糊</string>
+     <string>音频内容没有听懂</string>
     </property>
    </widget>
    <widget class="QCheckBox" name="flag2">
     <property name="geometry">
      <rect>
-      <x>525</x>
-      <y>85</y>
-      <width>175</width>
+      <x>530</x>
+      <y>125</y>
+      <width>145</width>
       <height>30</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Hack</family>
-      <pointsize>18</pointsize>
-      <italic>true</italic>
-      <bold>true</bold>
+      <family>Microsoft YaHei UI</family>
+      <pointsize>16</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
      </font>
     </property>
     <property name="layoutDirection">
      <enum>Qt::RightToLeft</enum>
     </property>
     <property name="text">
-     <string>音频音量异常</string>
+     <string>语音内容不全</string>
     </property>
    </widget>
    <widget class="QCheckBox" name="flag3">
     <property name="geometry">
      <rect>
-      <x>720</x>
-      <y>85</y>
-      <width>175</width>
+      <x>690</x>
+      <y>125</y>
+      <width>390</width>
       <height>30</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Hack</family>
-      <pointsize>18</pointsize>
-      <italic>true</italic>
-      <bold>true</bold>
+      <family>Microsoft YaHei UI</family>
+      <pointsize>16</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
      </font>
     </property>
     <property name="layoutDirection">
      <enum>Qt::RightToLeft</enum>
     </property>
     <property name="text">
-     <string>音频时长过短</string>
+     <string>包含敏感信息(电话号码/车牌/家庭住址)</string>
     </property>
    </widget>
    <widget class="QComboBox" name="emotion_info">
     <property name="geometry">
      <rect>
-      <x>445</x>
-      <y>355</y>
-      <width>150</width>
+      <x>50</x>
+      <y>730</y>
+      <width>230</width>
       <height>30</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Hack</family>
+      <family>Microsoft YaHei UI</family>
       <pointsize>16</pointsize>
      </font>
+    </property>
+    <property name="toolTipDuration">
+     <number>-1</number>
     </property>
     <property name="currentIndex">
      <number>-1</number>
     </property>
     <item>
      <property name="text">
-      <string>客服-饱满</string>
+      <string>正向情绪-积极饱满</string>
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>../static/icons/service.png</normaloff>../static/icons/service.png</iconset>
+       <normaloff>../static/icons/laugh.png</normaloff>../static/icons/laugh.png</iconset>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>客服-平淡</string>
+      <string>正常情绪-平静稳定</string>
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>../static/icons/service.png</normaloff>../static/icons/service.png</iconset>
+       <normaloff>../static/icons/usual.png</normaloff>../static/icons/usual.png</iconset>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>用户-积极</string>
+      <string>负向情绪-消极暴躁</string>
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>../static/icons/user.png</normaloff>../static/icons/user.png</iconset>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>用户-日常</string>
-     </property>
-     <property name="icon">
-      <iconset>
-       <normaloff>../static/icons/user.png</normaloff>../static/icons/user.png</iconset>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>用户-消极</string>
-     </property>
-     <property name="icon">
-      <iconset>
-       <normaloff>../static/icons/user.png</normaloff>../static/icons/user.png</iconset>
+       <normaloff>../static/icons/depressed.png</normaloff>../static/icons/depressed.png</iconset>
      </property>
     </item>
    </widget>
    <widget class="QSlider" name="pleasure_info">
     <property name="geometry">
      <rect>
-      <x>445</x>
-      <y>410</y>
-      <width>400</width>
+      <x>440</x>
+      <y>430</y>
+      <width>480</width>
       <height>20</height>
      </rect>
     </property>
@@ -512,16 +481,17 @@
    <widget class="QLabel" name="pleasure_show">
     <property name="geometry">
      <rect>
-      <x>860</x>
-      <y>410</y>
+      <x>940</x>
+      <y>425</y>
       <width>50</width>
-      <height>20</height>
+      <height>30</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Hack</family>
-      <pointsize>14</pointsize>
+      <family>Microsoft YaHei UI</family>
+      <pointsize>18</pointsize>
+      <bold>true</bold>
      </font>
     </property>
     <property name="frameShape">
@@ -540,9 +510,9 @@
    <widget class="QSlider" name="action_info">
     <property name="geometry">
      <rect>
-      <x>445</x>
-      <y>460</y>
-      <width>400</width>
+      <x>440</x>
+      <y>680</y>
+      <width>480</width>
       <height>20</height>
      </rect>
     </property>
@@ -568,16 +538,17 @@
    <widget class="QLabel" name="action_show">
     <property name="geometry">
      <rect>
-      <x>860</x>
-      <y>460</y>
+      <x>940</x>
+      <y>675</y>
       <width>50</width>
-      <height>20</height>
+      <height>30</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Hack</family>
-      <pointsize>14</pointsize>
+      <family>Microsoft YaHei UI</family>
+      <pointsize>18</pointsize>
+      <bold>true</bold>
      </font>
     </property>
     <property name="frameShape">
@@ -596,8 +567,8 @@
    <widget class="QPushButton" name="submit">
     <property name="geometry">
      <rect>
-      <x>595</x>
-      <y>520</y>
+      <x>1010</x>
+      <y>740</y>
       <width>100</width>
       <height>40</height>
      </rect>
@@ -628,25 +599,25 @@
    <widget class="QCheckBox" name="flag4">
     <property name="geometry">
      <rect>
-      <x>330</x>
-      <y>135</y>
-      <width>175</width>
+      <x>325</x>
+      <y>170</y>
+      <width>190</width>
       <height>30</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Hack</family>
-      <pointsize>18</pointsize>
-      <italic>true</italic>
-      <bold>true</bold>
+      <family>Microsoft YaHei UI</family>
+      <pointsize>16</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
      </font>
     </property>
     <property name="layoutDirection">
      <enum>Qt::RightToLeft</enum>
     </property>
     <property name="text">
-     <string>音频包含多人</string>
+     <string>音频静音部分过长</string>
     </property>
    </widget>
    <widget class="QPushButton" name="replay">
@@ -700,6 +671,728 @@
       <height>60</height>
      </size>
     </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>0</y>
+      <width>20</width>
+      <height>833</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>559</y>
+      <width>310</width>
+      <height>3</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="role">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>580</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>角色</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_3">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>75</y>
+      <width>840</width>
+      <height>3</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="abnormal">
+    <property name="geometry">
+     <rect>
+      <x>325</x>
+      <y>80</y>
+      <width>150</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>异常情况记录</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="flag5">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>170</y>
+      <width>145</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+      <pointsize>16</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>音频全为杂音</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="flag6">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>170</y>
+      <width>105</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+      <pointsize>16</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>声音偏小</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="flag7">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>170</y>
+      <width>105</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+      <pointsize>16</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>时长偏短</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="flag8">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>170</y>
+      <width>105</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+      <pointsize>16</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>时长偏长</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_4">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>210</y>
+      <width>840</width>
+      <height>3</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>320</y>
+      <width>100</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../static/icons/p1_sam.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>320</y>
+      <width>100</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../static/icons/p2_sam.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>320</y>
+      <width>100</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../static/icons/p3_sam.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>320</y>
+      <width>100</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../static/icons/p4_sam.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>320</y>
+      <width>100</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../static/icons/p5_sam.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>460</y>
+      <width>100</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #FF0000;</string>
+    </property>
+    <property name="text">
+     <string>愤怒的
+轻蔑的
+痛苦的
+激怒的</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>460</y>
+      <width>100</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #FFA500;</string>
+    </property>
+    <property name="text">
+     <string>生气的
+冷淡的
+烦恼的
+气愤的</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>460</y>
+      <width>100</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #FFFF00;</string>
+    </property>
+    <property name="text">
+     <string>中性的</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>460</y>
+      <width>100</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #00FF00;</string>
+    </property>
+    <property name="text">
+     <string>注意的
+温和的
+满意的
+快乐的</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>460</y>
+      <width>100</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #00FFFF;</string>
+    </property>
+    <property name="text">
+     <string>感兴趣的
+友好的
+高兴的
+兴奋的</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>570</y>
+      <width>100</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../static/icons/a1_sam.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>570</y>
+      <width>100</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../static/icons/a2_sam.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>570</y>
+      <width>100</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../static/icons/a3_sam.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>570</y>
+      <width>100</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../static/icons/a4_sam.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>570</y>
+      <width>100</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../static/icons/a5_sam.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_16">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>710</y>
+      <width>100</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #E6FFE6;</string>
+    </property>
+    <property name="text">
+     <string>困倦的
+平静的
+放松的
+拘谨的</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_17">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>710</y>
+      <width>100</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #B3FFB3;</string>
+    </property>
+    <property name="text">
+     <string>心不在焉的
+轻松的
+平静的
+忸怩的</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_19">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>710</y>
+      <width>100</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #4DFF4D;</string>
+    </property>
+    <property name="text">
+     <string>注意的
+有兴趣的
+引人注意的
+吃惊的</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_20">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>710</y>
+      <width>100</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #1AFF1A;</string>
+    </property>
+    <property name="text">
+     <string>清醒的
+兴奋的
+感兴趣的
+惊讶的</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_18">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>710</y>
+      <width>100</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #80FF80;</string>
+    </property>
+    <property name="text">
+     <string>中性的</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_21">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>558</y>
+      <width>840</width>
+      <height>5</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: black;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_22">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>312</y>
+      <width>840</width>
+      <height>5</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: black;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="role_info">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>630</y>
+      <width>230</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="toolTipDuration">
+     <number>-1</number>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+    <item>
+     <property name="text">
+      <string>客服人员</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../static/icons/service.png</normaloff>../static/icons/service.png</iconset>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>致电用户</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../static/icons/user.png</normaloff>../static/icons/user.png</iconset>
+     </property>
+    </item>
    </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
