@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>700</width>
-    <height>270</height>
+    <height>400</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -54,9 +54,9 @@
    </property>
    <property name="font">
     <font>
-     <family>Hack</family>
+     <family>Microsoft YaHei UI</family>
      <pointsize>16</pointsize>
-     <bold>true</bold>
+     <bold>false</bold>
     </font>
    </property>
    <property name="text">
@@ -74,9 +74,9 @@
    </property>
    <property name="font">
     <font>
-     <family>Hack</family>
+     <family>Microsoft YaHei UI</family>
      <pointsize>16</pointsize>
-     <bold>true</bold>
+     <bold>false</bold>
     </font>
    </property>
    <property name="frameShape">
@@ -97,9 +97,9 @@
    </property>
    <property name="font">
     <font>
-     <family>Hack</family>
+     <family>Microsoft YaHei UI</family>
      <pointsize>16</pointsize>
-     <bold>true</bold>
+     <bold>false</bold>
     </font>
    </property>
    <property name="frameShape">
@@ -219,20 +219,110 @@
   <widget class="QPushButton" name="submit">
    <property name="geometry">
     <rect>
-     <x>325</x>
-     <y>220</y>
-     <width>50</width>
-     <height>30</height>
+     <x>300</x>
+     <y>320</y>
+     <width>100</width>
+     <height>60</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>Hack</family>
-     <pointsize>14</pointsize>
+     <pointsize>18</pointsize>
     </font>
    </property>
    <property name="text">
     <string>确定</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="baidu_asr">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>205</y>
+     <width>150</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <property name="text">
+    <string>百度语音识别</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="api_key">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>240</y>
+     <width>90</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>API_KEY</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="secret_key">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>275</y>
+     <width>130</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>SECRET_KEY</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="api_key_info">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>240</y>
+     <width>500</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="secret_key_info">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>275</y>
+     <width>500</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
    </property>
   </widget>
  </widget>
