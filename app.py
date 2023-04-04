@@ -37,7 +37,7 @@ class Main:
                 self.ding = json.load(f)
         else:
             self.ding = {
-                "filelist": glob.glob(self.info["datapath"] + "/*.mp3"),
+                "filelist": glob.glob(self.info["datapath"] + "/*.wav"),
                 "id": 0
             }
             self.ding["end"] = len(self.ding["filelist"])
