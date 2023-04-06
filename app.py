@@ -1,6 +1,7 @@
 import os
 import json
 import glob
+import threading
 from PySide6.QtWidgets import QApplication
 
 from src.config.config import Config
@@ -27,6 +28,9 @@ class Main:
             self.mainwindow.name_info.setText(self.info["username"])
             self.mainwindow.main_win.show()
             self.mainwindow.setting_player()
+            # 如果播放器设置完成，开启一个线程请求百度语音识别接口，防止网络请求造成的堵塞
+            asr = threading.Thread(target=self.mainwindow.asr)
+            asr.start()
         else:
             self.config.config_win.show()
     

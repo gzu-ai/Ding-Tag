@@ -1,10 +1,12 @@
 import os
-from PySide6.QtWidgets import QMainWindow, QMessageBox
+import json
+from PySide6.QtWidgets import QMainWindow, QMessageBox, QTextEdit
 from PySide6.QtMultimedia import QMediaPlayer, QAudioOutput
-from PySide6.QtCore import QUrl, QSize
+from PySide6.QtCore import QUrl, QSize, Signal, QObject
 from PySide6.QtGui import QIcon
 
 from .mainwindow_ui import Ui_MainWindow
+from ..tools.baidu_asr import get_speech_text
 
 
 class MyQMainWindow(QMainWindow):
@@ -24,6 +26,11 @@ class MyQMainWindow(QMainWindow):
             event.ignore()
 
 
+class TextSignal(QObject):
+    # 定义一个文本更新信号
+    update_text = Signal(str)
+
+
 class MainWindow(Ui_MainWindow):
     """ 应用主窗口 """
     def __init__(self, main) -> None:
@@ -39,6 +46,9 @@ class MainWindow(Ui_MainWindow):
         self.player.setAudioOutput(self.audioOutput)
         self.audioOutput.setVolume(1)  # 设置音量，范围为0~1
 
+        # text_info 更新的信号
+        self.uptxt = TextSignal()
+
         # 一些标志
         self.player_flag = "pause"
 
@@ -51,6 +61,7 @@ class MainWindow(Ui_MainWindow):
         self.pleasure_info.valueChanged.connect(self.pleasure_change)
         self.action_info.valueChanged.connect(self.action_change)
         self.submit.clicked.connect(self.submit_event)
+        self.uptxt.update_text.connect(self.update_text_info)
     
     def setting_player(self):
         """ 设置播放器 """
@@ -58,13 +69,32 @@ class MainWindow(Ui_MainWindow):
             QMessageBox.information(self.main_win, "提示", "该数据已标注完成，请退出程序")
             self.main_win.close()
         else:
-            self.path_info.setText(
-                self.main.ding["filelist"][self.main.ding["id"]].split(os.sep)[1]
-            )
-            self.player.setSource(
-                QUrl.fromLocalFile(self.main.ding["filelist"][self.main.ding["id"]])
-            )
+            file_path = self.main.ding["filelist"][self.main.ding["id"]]
+            self.path_info.setText(file_path.split(os.sep)[1])
+            self.player.setSource(QUrl.fromLocalFile(file_path))
     
+    def asr(self):
+        """ 调用百度语音识别接口 """
+        if self.main.info["baiduchoose"]:
+            file_path = self.main.ding["filelist"][self.main.ding["id"]]
+            try:
+                result = get_speech_text(
+                    file_path,
+                    self.main.info["apikey"],
+                    self.main.info["secretkey"]
+                )
+            except:
+                pass  # 还没想好怎么处理，断网就先跳过吧
+            else:
+                result = json.loads(result)
+                if result["err_msg"] == "success.":
+                    # 这里只考虑了识别成功的情况，如果识别失败暂不做处理
+                    self.uptxt.update_text.emit(result["result"][0])
+    
+    def update_text_info(self, text):
+        """ 更新文本信息中的内容 """
+        self.text_info.setText(text)
+            
     def play_button(self):
         """ 播放按键控制播放状态 """
         if self.player_flag == "pause":  # 停止 --> 播放
