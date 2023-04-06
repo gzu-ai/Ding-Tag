@@ -103,6 +103,14 @@ class Config(Ui_Form):
                 flag = False
                 break
         
+        # 如果使用百度语音识别服务，其key不能为空
+        if info["baiduchoose"]:
+            for item in ["apikey", "secretkey"]:
+                if info[item] == '':
+                    QMessageBox.warning(self.config_win, "警告", f"{item} 不能为空")
+                    flag = False
+                    break
+        
         # savepath 进行重构，在存储路径的基础上，存储文件根据 datapath 进行重命名
         if flag:
             info["savepath"] = os.path.join(
