@@ -1,3 +1,5 @@
+from charset_normalizer import md__mypyc  # 为了 Pyinstall 打包 exe 可执行程序
+
 import os
 import json
 import glob
