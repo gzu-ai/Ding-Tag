@@ -1,4 +1,4 @@
-import os, json, threading
+import os, json
 from PySide6.QtWidgets import QWidget, QFileDialog, QMessageBox
 
 from .config_ui import Ui_Form
@@ -78,9 +78,7 @@ class Config(Ui_Form):
             self.main.mainwindow.main_win.show()
             self.main.mainwindow.name_info.setText(info["username"])
             self.main.mainwindow.setting_player()
-            # 使用线程防止网络请求阻塞程序
-            asr = threading.Thread(self.main.mainwindow.asr)
-            asr.start()
+            self.main.mainwindow.create_thread_asr()
             
     def get_config_info(self):
         """ 获取配置信息并做相应的限制检查 """
