@@ -106,7 +106,7 @@ class Config(Ui_Form):
         # savepath 进行重构，在存储路径的基础上，存储文件根据 datapath 进行重命名
         if flag:
             info["savepath"] = os.path.join(
-                info["savepath"], "result-{}.csv".format(os.path.basename(info["datapath"]))
+                info["savepath"], "result-{}-{}.csv".format(os.path.basename(info["datapath"]), info["username"])
             )
         
         return flag, info
